@@ -13,7 +13,7 @@ class Circle extends Shape
 
     public function __construct($name,$radius)
     {
-        parent::__construct($name,false);
+        parent::__construct($name);
         $this->radius = $radius;
     }
 

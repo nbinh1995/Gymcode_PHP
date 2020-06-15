@@ -14,7 +14,7 @@ class Rectangle extends Shape
 
     public function __construct($name, $width, $height)
     {
-        parent::__construct($name,false);
+        parent::__construct($name);
         $this->width = $width;
         $this->height = $height;
     }

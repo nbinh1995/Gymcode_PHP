@@ -9,7 +9,7 @@ $arrShape = [new Circle('circle1',10),
             new Cylinder('cylinder1',7,10)];
 foreach($arrShape as $shape){
 $text =  '<br>'.$shape->name.' co dien tich la: '.$shape->calculateArea(). ' ';   
-if($shape->color){ $text.='-'.$shape-> howToColor();}
+if($shape instanceof color ){ $text.='-'.$shape-> howToColor();}
 echo $text;
 } 
 ?>
