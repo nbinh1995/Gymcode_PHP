@@ -13,6 +13,7 @@ foreach ($arrShape as $shape){
 $scale = rand(1,100);
 echo '<br>'.$shape->name.'co dien tich sau resize la: '.$shape->resize($scale);
 }
+
 function searchShape($arrShape,$search){
 if(empty($search)) return $arrShape;
 $filter=array_filter($arrShape,function($shape) use($search){
@@ -30,6 +31,7 @@ function maxArea($arrShape){
    }
    return $index;
 }
+
 function minPerimeter($arrShape){
    $min=$arrShape[0]->calculatePerimeter();
    $index = 0;
@@ -40,4 +42,5 @@ function minPerimeter($arrShape){
    }
    return $index;
 }
+
 ?>
