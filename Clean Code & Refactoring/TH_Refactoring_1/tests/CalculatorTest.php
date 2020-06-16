@@ -13,14 +13,14 @@ class CalculatorTest extends TestCase
 {
     public function testCalculateAdd()
     {
-        $a = 1;
-        $b = 1;
-        $o = '+';
+        $firstOperand = 1;
+        $secondOperand = 1;
+        $operator = '+';
 
         $expected = 2;
 
         $calculator = new Calculator();
-        $result = $calculator->calculate($a, $b, $o);
+        $result = $calculator->calculate($firstOperand, $secondOperand, $operator);
         $this->assertEquals($expected, $result);
     }
 
