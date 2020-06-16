@@ -25,5 +25,4 @@ $node = new Node(9);
 echo '<br>Get index 1: '.$linkList->get(1)->readNode();
 echo '<br>indexOf node(9): '.$linkList->indexOf($node);
 
-
 ?>

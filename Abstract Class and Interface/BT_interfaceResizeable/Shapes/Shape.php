@@ -5,7 +5,7 @@
  * Date: 11/21/18
  * Time: 17:14
  */
-class Shape
+abstract class Shape
 {
     public $name;
 
